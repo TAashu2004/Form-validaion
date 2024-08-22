@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="formvalidation.js"></script> 
+    <style>
+        .box{
+        text-align: center;
+            border: 1px solid;
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-top: 12%;
+            border-radius: 10px;
+            padding-top: 10px;
+            background:linear-gradient(white,red)
+        }
+        p{
+            color: white;
+        }
+        body{
+            background-color: black;
+        }
+        label{
+            font-weight: bold;
+        }
+    </style> 
+</head>
+<body>
+    <div class="box">
+    <form onsubmit="return validation()" id="form">
+    <label>Username</label><br>
+    <input style="border-radius: 8px;" type="text" id="userr" placeholder="Username"><br>
+    <p id="put"></p>
+
+    <label>Password</label><br>
+    <input style="border-radius: 8px;"  type="text" placeholder="Password" id="passs"><br>
+    <p id="putt"></p>
+    <label>Confirm Password</label><br>
+    <input style="border-radius: 8px;" type="text" placeholder="Enter Password Again" id="compas"><br>
+    <p id="puta"></p>
+    <label>Phone No.</label><br>
+    <input style="border-radius: 8px;" type="text" placeholder="Enter Phone no." id="fon"><br>
+    <p id="putc"></p>
+    <label>E-mail</label><br>
+    <input style="border-radius: 8px;" type="text" placeholder="Enter E-mail" id="maail"><br>
+    <p id="putd"></p>
+    <input style="color: red; margin-bottom: 10px; background-color: black; font-size: 20px; border:4px solid white;"  type="submit">
+    </form>
+    </div>
+</body>
+</html>
